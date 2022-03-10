@@ -1,9 +1,13 @@
+/* this file will be inserted as a <script> tag into hacker news */
+
+import { onDown } from './keypressHandlers/down.js';
+
 document.addEventListener('keydown', (e) => {
   if (e.isComposing) return; // if current keypress is in an input method, don't mess with it.
   switch (e.code) {
     case 'ArrowDown':
       e.preventDefault();
-      console.log('down');
+      onDown();
       break;
     case 'ArrowUp':
       e.preventDefault();

@@ -19,7 +19,7 @@
   "web_accessible_resources": [
     {
       "matches": ["https://news.ycombinator.com/*"],
-      "resources": ["scriptTag.js"]
+      "resources": ["scriptTag.js", "keypressHandlers/*.js"]
     }
   ],
   "icons": {
