@@ -29,10 +29,6 @@ document.addEventListener('keydown', (event) => {
       event.preventDefault();
       enter();
       break;
-    case 'Space':
-      event.preventDefault();
-      console.log('space');
-      break;
     default:
       break;
   }
