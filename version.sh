@@ -5,6 +5,8 @@ node version.cjs
 
 # make new zip
 rm -f dist.zip
-zip -r dist src/*
+cd src
+zip -r ../dist *
+cd ..
 
 git add -A
