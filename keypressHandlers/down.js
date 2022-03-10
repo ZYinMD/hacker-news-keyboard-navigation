@@ -8,8 +8,8 @@ export function onDown() {
 function findNext() {
   const allEntries = document.querySelectorAll('.titlelink');
   if (!states.currentEntryId) return allEntries[0];
-  const currentIndex = Array.from(allEntries).findIndex((a) =>
-    a.href?.endsWith?.(states.currentEntryId),
+  const currentIndex = Array.from(allEntries).findIndex(
+    (a) => a.parentNode.parentNode.id == states.currentEntryId,
   );
   if (currentIndex === -1) return allEntries[0];
   return allEntries[currentIndex + 1] || allEntries[0];
