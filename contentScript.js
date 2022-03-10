@@ -5,3 +5,8 @@ if (!location.search.includes('id=')) {
   scriptTag.type = 'module';
   document.head.appendChild(scriptTag);
 }
+
+const bc = new BroadcastChannel('hacker-news-keyboard-navigation');
+bc.onmessage = (message) => {
+  chrome.runtime.sendMessage(message.data);
+};

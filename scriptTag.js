@@ -4,6 +4,7 @@ import { onDown } from './keypressHandlers/down.js';
 import { enter } from './keypressHandlers/enter.js';
 import { onLeft } from './keypressHandlers/left.js';
 import { onRight } from './keypressHandlers/right.js';
+import { onSpace } from './keypressHandlers/space.js';
 import { onUp } from './keypressHandlers/up.js';
 
 document.addEventListener('keydown', (event) => {
@@ -28,6 +29,10 @@ document.addEventListener('keydown', (event) => {
     case 'Enter':
       event.preventDefault();
       enter();
+      break;
+    case 'Space':
+      event.preventDefault();
+      onSpace();
       break;
     default:
       break;
