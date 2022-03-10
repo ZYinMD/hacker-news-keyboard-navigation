@@ -12,8 +12,7 @@
   "content_scripts": [
     {
       "matches": ["https://news.ycombinator.com/*"],
-      "js": ["contentScript.js"],
-      "css": ["style.css"]
+      "js": ["contentScript.js"]
     }
   ],
   "web_accessible_resources": [

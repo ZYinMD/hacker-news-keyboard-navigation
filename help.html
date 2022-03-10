@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker News keyboard navigation</title>
+    <style>
+      body {
+        font-family: verdana, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 17px;
+        margin: 50px;
+      }
+      h1 {
+        font-size: 27px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+      p {
+        margin: 22px 0;
+      }
+      kbd {
+        padding: 1px 7px 2px;
+        margin: 0 2px;
+        border: 1px solid #999;
+        border-radius: 0.2em;
+        background-color: #eee;
+        color: #333;
+      }
+      kbd.low {
+        padding: 0 7px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hacker News keyboard navigation</h1>
+    <p><kbd>↑</kbd><kbd>↓</kbd>: go up and down the list</p>
+    <p>
+      <kbd class="low">←</kbd>: not interested / hide (the major incentive to use this extension)
+    </p>
+    <p><kbd class="low">→</kbd>: open link (background new tab)</p>
+    <p><kbd>Enter</kbd>: open link (foreground new tab)</p>
+    <p><kbd>Space</kbd>: open comments</p>
+  </body>
+</html>
