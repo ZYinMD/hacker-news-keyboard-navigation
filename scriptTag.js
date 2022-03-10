@@ -2,31 +2,31 @@
 
 import { onDown } from './keypressHandlers/down.js';
 
-document.addEventListener('keydown', (e) => {
-  if (e.isComposing) return; // if current keypress is in an input method, don't mess with it.
-  switch (e.code) {
+document.addEventListener('keydown', (event) => {
+  if (event.isComposing) return; // if current keypress is in an input method, don't mess with it.
+  switch (event.code) {
     case 'ArrowDown':
-      e.preventDefault();
+      event.preventDefault();
       onDown();
       break;
     case 'ArrowUp':
-      e.preventDefault();
+      event.preventDefault();
       console.log('up');
       break;
     case 'ArrowLeft':
-      e.preventDefault();
+      event.preventDefault();
       console.log('left');
       break;
     case 'ArrowRight':
-      e.preventDefault();
+      event.preventDefault();
       console.log('right');
       break;
     case 'Enter':
-      e.preventDefault();
+      event.preventDefault();
       console.log('enter');
       break;
     case 'Space':
-      e.preventDefault();
+      event.preventDefault();
       console.log('space');
       break;
     default:
