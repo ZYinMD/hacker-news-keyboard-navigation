@@ -1,12 +1,12 @@
-export const currentTitle = {
+export const currentFocus = {
   id: '',
   link: null,
 };
 
 export function focus(titleLink) {
   titleLink.focus();
-  currentTitle.link = titleLink;
-  currentTitle.id = getId(titleLink);
+  currentFocus.link = titleLink;
+  currentFocus.id = getId(titleLink);
 }
 
 export function getId(titleLink) {

@@ -1,4 +1,4 @@
-import { focus, getId, currentTitle } from './utils.js';
+import { focus, getId, currentFocus } from './utils.js';
 
 export function onDown() {
   const next = findNext();
@@ -8,8 +8,8 @@ export function onDown() {
 export function findNext() {
   const allTitles = document.querySelectorAll('.titlelink');
   const first = allTitles[0];
-  if (!currentTitle.id) return first;
-  const currentIndex = Array.from(allTitles).findIndex((a) => getId(a) == currentTitle.id);
+  if (!currentFocus.id) return first;
+  const currentIndex = Array.from(allTitles).findIndex((a) => getId(a) == currentFocus.id);
   if (currentIndex === -1) return first;
-  return allTitles[currentIndex + 1] || currentTitle.link; // if +1 doesn't exist, it's bottom
+  return allTitles[currentIndex + 1] || currentFocus.link; // if +1 doesn't exist, it's bottom
 }
