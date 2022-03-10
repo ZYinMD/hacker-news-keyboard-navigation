@@ -1,8 +1,7 @@
 import { currentFocus } from './utils.js';
 
-export function enter() {
-  const commentsLink = document.querySelector(`a[href="item?id=${currentFocus.id}"]`);
-  commentsLink.target = '_blank';
-  commentsLink.click();
-  commentsLink.target = '_self';
+export function onEnter() {
+  currentFocus.link.target = '_blank';
+  currentFocus.link.click();
+  currentFocus.link.target = '_self';
 }
