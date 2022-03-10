@@ -2,6 +2,7 @@
 
 import { onDown } from './keypressHandlers/down.js';
 import { onRight } from './keypressHandlers/right.js';
+import { onUp } from './keypressHandlers/up.js';
 
 document.addEventListener('keydown', (event) => {
   if (event.isComposing) return; // if current keypress is in an input method, don't mess with it.
@@ -12,7 +13,7 @@ document.addEventListener('keydown', (event) => {
       break;
     case 'ArrowUp':
       event.preventDefault();
-      console.log('up');
+      onUp();
       break;
     case 'ArrowLeft':
       event.preventDefault();

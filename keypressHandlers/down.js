@@ -7,8 +7,9 @@ export function onDown() {
 
 function findNext() {
   const allEntries = document.querySelectorAll('.titlelink');
-  if (!states.currentEntryId) return allEntries[0];
+  const first = allEntries[0];
+  if (!states.currentEntryId) return first;
   const currentIndex = Array.from(allEntries).findIndex((a) => getId(a) == states.currentEntryId);
-  if (currentIndex === -1) return allEntries[0];
-  return allEntries[currentIndex + 1] || allEntries[0];
+  if (currentIndex === -1) return first;
+  return allEntries[currentIndex + 1] || first;
 }
