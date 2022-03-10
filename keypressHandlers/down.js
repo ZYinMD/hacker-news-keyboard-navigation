@@ -1,15 +1,15 @@
-import { focus, getId, states } from './utils.js';
+import { focus, getId, currentTitle } from './utils.js';
 
 export function onDown() {
-  const nextEntry = findNext();
-  focus(nextEntry);
+  const next = findNext();
+  focus(next);
 }
 
 export function findNext() {
-  const allEntries = document.querySelectorAll('.titlelink');
-  const first = allEntries[0];
-  if (!states.currentEntryId) return first;
-  const currentIndex = Array.from(allEntries).findIndex((a) => getId(a) == states.currentEntryId);
+  const allTitles = document.querySelectorAll('.titlelink');
+  const first = allTitles[0];
+  if (!currentTitle.id) return first;
+  const currentIndex = Array.from(allTitles).findIndex((a) => getId(a) == currentTitle.id);
   if (currentIndex === -1) return first;
-  return allEntries[currentIndex + 1] || states.currentEntry; // if +1 doesn't exist, it's bottom
+  return allTitles[currentIndex + 1] || currentTitle.node; // if +1 doesn't exist, it's bottom
 }

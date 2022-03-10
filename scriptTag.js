@@ -1,4 +1,4 @@
-/* this file will be inserted as a <script> tag into hacker news */
+/* this file will be inserted as a <script> tag into the hacker news site*/
 
 import { onDown } from './keypressHandlers/down.js';
 import { enter } from './keypressHandlers/enter.js';

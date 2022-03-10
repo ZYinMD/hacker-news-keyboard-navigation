@@ -1,12 +1,12 @@
-export const states = {
-  currentEntryId: '',
-  currentEntry: null,
+export const currentTitle = {
+  id: '',
+  node: null,
 };
 
 export function focus(a) {
   a.focus();
-  states.currentEntry = a;
-  states.currentEntryId = getId(a);
+  currentTitle.node = a;
+  currentTitle.id = getId(a);
 }
 
 export function getId(a) {

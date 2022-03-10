@@ -1,7 +1,7 @@
-import { states } from './utils.js';
+import { currentTitle } from './utils.js';
 
 export function onRight() {
-  states.currentEntry.target = '_blank';
-  states.currentEntry.click();
-  states.currentEntry.target = '_self';
+  currentTitle.node.target = '_blank';
+  currentTitle.node.click();
+  currentTitle.node.target = '_self';
 }
