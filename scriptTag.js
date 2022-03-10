@@ -1,6 +1,7 @@
 /* this file will be inserted as a <script> tag into hacker news */
 
 import { onDown } from './keypressHandlers/down.js';
+import { enter } from './keypressHandlers/enter.js';
 import { onLeft } from './keypressHandlers/left.js';
 import { onRight } from './keypressHandlers/right.js';
 import { onUp } from './keypressHandlers/up.js';
@@ -26,7 +27,7 @@ document.addEventListener('keydown', (event) => {
       break;
     case 'Enter':
       event.preventDefault();
-      console.log('enter');
+      enter();
       break;
     case 'Space':
       event.preventDefault();
