@@ -5,10 +5,10 @@ export const states = {
 
 export function focus(a) {
   a.focus();
-  states.currentEntryId = a.parentNode.parentNode.id;
   states.currentEntry = a;
+  states.currentEntryId = getId(a);
 }
 
-function parseNumber(string) {
-  return string.match(/\d+/)[0];
+export function getId(a) {
+  return a.parentNode.parentNode.id;
 }
