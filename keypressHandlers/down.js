@@ -11,5 +11,5 @@ export function findNext() {
   if (!currentTitle.id) return first;
   const currentIndex = Array.from(allTitles).findIndex((a) => getId(a) == currentTitle.id);
   if (currentIndex === -1) return first;
-  return allTitles[currentIndex + 1] || currentTitle.node; // if +1 doesn't exist, it's bottom
+  return allTitles[currentIndex + 1] || currentTitle.link; // if +1 doesn't exist, it's bottom
 }

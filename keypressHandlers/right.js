@@ -1,7 +1,7 @@
 import { currentTitle } from './utils.js';
 
 export function onRight() {
-  currentTitle.node.target = '_blank';
-  currentTitle.node.click();
-  currentTitle.node.target = '_self';
+  currentTitle.link.target = '_blank';
+  currentTitle.link.click();
+  currentTitle.link.target = '_self';
 }
