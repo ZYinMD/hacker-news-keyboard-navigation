@@ -11,5 +11,5 @@ function findPrevious() {
   if (!states.currentEntryId) return last;
   const currentIndex = Array.from(allEntries).findIndex((a) => getId(a) == states.currentEntryId);
   if (currentIndex === -1) return last;
-  return allEntries[currentIndex - 1] || last;
+  return allEntries[currentIndex - 1] || states.currentEntry; // if -1 doesn't exist, it's already top
 }
