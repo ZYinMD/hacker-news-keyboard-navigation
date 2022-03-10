@@ -5,7 +5,7 @@ export function onDown() {
   focus(nextEntry);
 }
 
-function findNext() {
+export function findNext() {
   const allEntries = document.querySelectorAll('.titlelink');
   const first = allEntries[0];
   if (!states.currentEntryId) return first;

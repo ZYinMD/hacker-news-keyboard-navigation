@@ -1,6 +1,7 @@
 /* this file will be inserted as a <script> tag into hacker news */
 
 import { onDown } from './keypressHandlers/down.js';
+import { onLeft } from './keypressHandlers/left.js';
 import { onRight } from './keypressHandlers/right.js';
 import { onUp } from './keypressHandlers/up.js';
 
@@ -17,7 +18,7 @@ document.addEventListener('keydown', (event) => {
       break;
     case 'ArrowLeft':
       event.preventDefault();
-      console.log('left');
+      onLeft();
       break;
     case 'ArrowRight':
       event.preventDefault();
