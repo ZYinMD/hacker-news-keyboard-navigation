@@ -1,6 +1,6 @@
 {
   "name": "Hacker News keyboard navigation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Use keyboard to navigate Hacker News",
   "manifest_version": 3,
   "action": {
@@ -11,14 +11,23 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://news.ycombinator.com/*"],
-      "js": ["contentScript.js"]
+      "matches": [
+        "https://news.ycombinator.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
     }
   ],
   "web_accessible_resources": [
     {
-      "matches": ["https://news.ycombinator.com/*"],
-      "resources": ["scriptTag.js", "keypressHandlers/*.js"]
+      "matches": [
+        "https://news.ycombinator.com/*"
+      ],
+      "resources": [
+        "scriptTag.js",
+        "keypressHandlers/*.js"
+      ]
     }
   ],
   "icons": {
