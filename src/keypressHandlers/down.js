@@ -11,5 +11,5 @@ export function findNext() {
   if (!currentFocus.id) return first;
   const currentIndex = Array.from(allTitles).findIndex((a) => getId(a) == currentFocus.id);
   if (currentIndex === -1) return first;
-  return allTitles[currentIndex + 1] || currentFocus.link; // if +1 doesn't exist, it's bottom
+  return allTitles[currentIndex + 1] || currentFocus.anchor; // if +1 doesn't exist, it's bottom
 }
