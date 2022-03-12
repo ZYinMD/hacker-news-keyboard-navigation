@@ -1,6 +1,6 @@
 {
   "name": "Hacker News keyboard navigation",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Use keyboard to navigate Hacker News",
   "manifest_version": 3,
   "action": {

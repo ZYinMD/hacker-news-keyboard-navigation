@@ -1,6 +1,6 @@
 {
   "name": "hacker-news-keyboard-navigation",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "scripts": {
     "version": "bash version.sh"
   }
