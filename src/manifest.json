@@ -1,6 +1,6 @@
 {
   "name": "Hacker News keyboard navigation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Use keyboard to navigate Hacker News",
   "manifest_version": 3,
   "action": {
@@ -31,6 +31,6 @@
     }
   ],
   "icons": {
-    "256": "icon.png"
+    "128": "icon128.png"
   }
 }
