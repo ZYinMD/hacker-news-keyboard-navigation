@@ -1,14 +1,14 @@
 export const currentFocus = {
   id: '',
-  link: null,
+  anchor: null,
 };
 
-export function focus(titleLink) {
-  titleLink.focus();
-  currentFocus.link = titleLink;
-  currentFocus.id = getId(titleLink);
+export function focus(anchor) {
+  anchor.focus();
+  currentFocus.anchor = anchor;
+  currentFocus.id = getId(anchor);
 }
 
-export function getId(titleLink) {
-  return titleLink.parentNode.parentNode.id;
+export function getId(anchor) {
+  return anchor.parentNode.parentNode.id;
 }
