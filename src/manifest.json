@@ -7,27 +7,18 @@
     "default_title": "Hacker News keyboard"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "sw.js"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://news.ycombinator.com/*"
-      ],
-      "js": [
-        "contentScript.js"
-      ]
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["contentScript.js"]
     }
   ],
   "web_accessible_resources": [
     {
-      "matches": [
-        "https://news.ycombinator.com/*"
-      ],
-      "resources": [
-        "scriptTag.js",
-        "keypressHandlers/*.js"
-      ]
+      "matches": ["https://news.ycombinator.com/*"],
+      "resources": ["scriptTag.js", "keypressHandlers/*.js"]
     }
   ],
   "icons": {
