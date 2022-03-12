@@ -8,7 +8,8 @@ import { onSpace } from './keypressHandlers/space.js';
 import { onUp } from './keypressHandlers/up.js';
 
 document.addEventListener('keydown', (event) => {
-  if (event.isComposing) return; // if current keypress is in an input method, don't mess with it.
+  if (event.isComposing) return; // if current keypress is in an input method
+  if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return; // if modifier keys are pressed
   switch (event.code) {
     case 'ArrowDown':
       event.preventDefault();
