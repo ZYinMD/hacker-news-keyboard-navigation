@@ -28,6 +28,7 @@ document.addEventListener('keydown', (event) => {
       onRight();
       break;
     case 'Enter':
+    case 'NumpadEnter':
       event.preventDefault();
       onEnter();
       break;
