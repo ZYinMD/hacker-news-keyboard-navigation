@@ -26,7 +26,7 @@ We aim to solve this with keyboard:
 
 ### Customize / fork:
 
-You don't need to know anything about chrome extensions to change the code. All you need is to read `src/scriptTag.js`.
+No chrome-extension-knowledge required. All you need is to read `src/scriptTag.js`.
 
 There's no compiling / bundling, all files in `src` are used by the browser as is.
 
