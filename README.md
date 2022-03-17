@@ -30,7 +30,7 @@ No chrome-extension-knowledge required. All you need is to read `src/scriptTag.j
 
 There's no compiling / bundling, all files in `src` are used by the browser as is.
 
-After reading `src/scriptTag.js`, if you feel like changing something, here's what you need to do:
+After reading `src/scriptTag.js`, if you feel like changing something, here's what to do:
 
 1. Clone this repo.
 
@@ -40,7 +40,7 @@ After reading `src/scriptTag.js`, if you feel like changing something, here's wh
 
 1. Turn on "Developer mode" on the top right.
 
-1. Click "Load unpacked" on the top left, go the repo you just cloned, select the `/src` folder.
+1. Click "Load unpacked" on the top left, in the folder you just cloned, select the `./src` folder.
 
 1. Now you're running a local version of the extension. All code changes will reflect.
 
