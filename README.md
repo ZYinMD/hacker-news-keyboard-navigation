@@ -4,7 +4,7 @@
 
 Hacker News has a unique feature that reddit and other forums don't have - the "hide" button.
 
-In theory, this enables such a workflow - scan through the titles, click "hide" on the ones you won't read. The benefit is when you come back later next time, you won't have to scan through those titles again.
+In theory, you may scan through the titles and click "hide" on each one you know you won't read. The benefit is when you come back later next time, you won't have to scan through those titles again.
 
 This sounds great, except nobody does it, because it's too many clicks.
 
