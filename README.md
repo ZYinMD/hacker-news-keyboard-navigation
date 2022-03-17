@@ -1,4 +1,6 @@
-## Background:
+## Hacker News keyboard navigation (chrome extension)
+
+### Background:
 
 Hacker News has a unique feature that reddit and other forums don't have - the "hide" button.
 
@@ -8,7 +10,7 @@ This sounds great, except nobody does it, because it's too many clicks.
 
 We aim to solve this with keyboard:
 
-## Use:
+### Use:
 
 [Install](https://chrome.google.com/webstore/detail/hacker-news-keyboard-navi/minojogeicmpnoahlmaihajdgkojnjdn) this chrome extension, then on Hacker News:
 
@@ -22,7 +24,7 @@ We aim to solve this with keyboard:
 
 `Space` : open comments
 
-## Customize / fork:
+### Customize / fork:
 
 You don't need to know anything about chrome extensions to change the code. All you need is to read `src/scriptTag.js`.
 
@@ -43,3 +45,6 @@ After reading `src/scriptTag.js`, if you feel like changing something, here's wh
 1. Now you're running a local version of the extension. All code changes will reflect.
 
 > Note: in most cases, changes take effect on reloading Hacker News, because the script tag is injected on page load. If you changed things outside of the script tag (i.e. extension related file), you may need to click the ⟳ button on `chrome://extensions/` to make it effective.
+
+### PR:
+Communicate first.
